@@ -12,6 +12,14 @@ let%test _ = kyuyo 25 = 23850
 let%test _ = kyuyo 28 = 26700
 let%test _ = kyuyo 31 = 29550
 
+(* 目的: BMIを計算する *)
+(* bmi: float -> float -> float *)
+let bmi l w = w /. l ** 2.0
+
+let%test _ = bmi 1. 30. = 30.
+let%test _ = bmi 1.5 45. = 20.
+let%test _ = bmi 2. 60. = 15.
+
 (* 目的:鶴の数から足の本数を計算する *)
 (* tsuru_no_ashi: int -> int *)
 let tsuru_no_ashi x = x * 2

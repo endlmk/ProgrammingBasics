@@ -1,5 +1,5 @@
 ;; This declares the hello_world executable implemented by hello_world.ml
 (library
- (name chap4)
+ (name ProgrammingBasic)
  (inline_tests)
  (preprocess (pps ppx_inline_test)))
